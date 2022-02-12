@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/btn_DialogEdit_Close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:background="?attr/actionBarItemBackground"
+        android:src="@drawable/ic_close" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="@font/iransans"
+            android:text="نام و نام خانوادگی:"
+            android:textColor="@color/textLight"
+            android:textSize="14dp" />
+
+
+        <EditText
+            android:id="@+id/edt_FullName_DialogEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:background="@drawable/bg_edittext"
+            android:elevation="10dp"
+            android:fontFamily="@font/irsansfanum"
+            android:gravity="start"
+            android:outlineSpotShadowColor="@color/background"
+            android:padding="10dp"
+            android:textSize="12dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="@font/iransans"
+            android:text="شماره تلفن:"
+            android:textColor="@color/textLight"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/edt_phoneNumber_DialogEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="28dp"
+            android:background="@drawable/bg_edittext"
+            android:elevation="10dp"
+            android:fontFamily="@font/irsansfanum"
+            android:gravity="start"
+            android:inputType="number"
+            android:outlineSpotShadowColor="@color/background"
+            android:padding="10dp"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/btn_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:fontFamily="@font/iransans"
+            android:gravity="center"
+            android:paddingVertical="7dp"
+            android:text="ثبت"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+</RelativeLayout>
